@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelloWorld.java 코드 분석 및 설명서</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #2980b9;
+            margin-top: 25px;
+        }
+        pre {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 5px;
+            padding: 15px;
+            overflow-x: auto;
+            font-family: 'Consolas', 'Monaco', monospace;
+        }
+        code {
+            background-color: #f1f3f4;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: 'Consolas', 'Monaco', monospace;
+        }
+        .info-box {
+            background-color: #e8f4fd;
+            border: 1px solid #bee5eb;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .output-box {
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+            font-family: 'Consolas', 'Monaco', monospace;
+        }
+        .improvement-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        ul, ol {
+            padding-left: 30px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        .highlight {
+            background-color: #fff2cc;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HelloWorld.java 코드 분석 및 설명서</h1>
+
+        <div class="info-box">
+            <strong>📋 문서 정보</strong><br>
+            • 파일명: HelloWorld.java<br>
+            • 위치: D:\alsrud\JAVA\20250910\HelloWorld.java<br>
+            • 작성일: 2025년 9월 10일<br>
+            • 특징: FernFlower 디컴파일러로 역컴파일된 소스코드
+        </div>
+
+        <h2>💻 소스코드</h2>
+        <pre><code>// Source code is decompiled from a .class file using FernFlower decompiler.
+public class HelloWorld {
+   public HelloWorld() {
+   }
+
+   public static void main(String[] var0) {
+      System.out.println("안녕하세요, Java의 세계에 오신 것을 환영합니다!");
+      System.out.println("Hello, World!");
+      String var1 = "Java 학습자";
+      byte var2 = 20;
+      System.out.println("\n=== 자기소개 ===");
+      System.out.println("이름: " + var1);
+      System.out.println("나이: " + var2 + "살");
+      byte var3 = 10;
+      byte var4 = 5;
+      int var5 = var3 + var4;
+      System.out.println("\n=== 간단한 계산 ===");
+      System.out.println("" + var3 + " + " + var4 + " = " + var5);
+   }
+}</code></pre>
+
+        <h2>🏗️ 코드 구조 분석</h2>
+
+        <h3>1. 클래스 선언</h3>
+        <pre><code>public class HelloWorld</code></pre>
+        <ul>
+            <li><span class="highlight">public</span>: 접근 제한자로, 다른 패키지에서도 접근 가능</li>
+            <li><span class="highlight">class</span>: 클래스를 선언하는 키워드</li>
+            <li><span class="highlight">HelloWorld</span>: 클래스의 이름 (파일명과 동일해야 함)</li>
+        </ul>
+
+        <h3>2. 기본 생성자</h3>
+        <pre><code>public HelloWorld() {
+}</code></pre>
+        <ul>
+            <li>매개변수가 없는 기본 생성자</li>
+            <li>내용이 비어있어서 특별한 초기화 작업은 수행하지 않음</li>
+        </ul>
+
+        <h3>3. main 메소드</h3>
+        <pre><code>public static void main(String[] var0)</code></pre>
+        <ul>
+            <li><span class="highlight">public</span>: 외부에서 호출 가능</li>
+            <li><span class="highlight">static</span>: 객체 생성 없이 클래스명으로 직접 호출 가능</li>
+            <li><span class="highlight">void</span>: 반환값이 없음</li>
+            <li><span class="highlight">main</span>: 프로그램의 진입점 메소드명</li>
+        </ul>
+
+        <h2>⚙️ 코드 동작 분석</h2>
+
+        <h3>1. 환영 메시지 출력</h3>
+        <pre><code>System.out.println("안녕하세요, Java의 세계에 오신 것을 환영합니다!");
+System.out.println("Hello, World!");</code></pre>
+        <p><code>System.out.println()</code>을 사용하여 콘솔에 텍스트를 출력하고 줄바꿈합니다.</p>
+
+        <h3>2. 변수 선언 및 초기화</h3>
+        <pre><code>String var1 = "Java 학습자";
+byte var2 = 20;</code></pre>
+        <ul>
+            <li><strong>String var1</strong>: 문자열 타입의 변수에 "Java 학습자" 저장</li>
+            <li><strong>byte var2</strong>: 바이트 타입의 변수에 20 저장 (나이를 의미)</li>
+        </ul>
+
+        <h3>3. 자기소개 섹션</h3>
+        <pre><code>System.out.println("\n=== 자기소개 ===");
+System.out.println("이름: " + var1);
+System.out.println("나이: " + var2 + "살");</code></pre>
+        <p><code>+</code> 연산자를 사용하여 문자열과 변수값을 연결합니다.</p>
+
+        <h3>4. 간단한 계산 섹션</h3>
+        <pre><code>byte var3 = 10;
+byte var4 = 5;
+int var5 = var3 + var4;</code></pre>
+        <p>두 개의 byte 타입 변수를 선언하고, 덧셈 결과를 int 타입 변수에 저장합니다.</p>
+
+        <h2>📤 실행 결과</h2>
+        <div class="output-box">
+안녕하세요, Java의 세계에 오신 것을 환영합니다!<br>
+Hello, World!<br>
+<br>
+=== 자기소개 ===<br>
+이름: Java 학습자<br>
+나이: 20살<br>
+<br>
+=== 간단한 계산 ===<br>
+10 + 5 = 15
+        </div>
+
+        <h2>📚 주요 개념 설명</h2>
+
+        <table>
+            <tr>
+                <th>데이터 타입</th>
+                <th>설명</th>
+                <th>범위</th>
+            </tr>
+            <tr>
+                <td>String</td>
+                <td>문자열을 저장하는 참조 타입</td>
+                <td>제한 없음</td>
+            </tr>
+            <tr>
+                <td>byte</td>
+                <td>8비트 정수를 저장하는 기본 타입</td>
+                <td>-128 ~ 127</td>
+            </tr>
+            <tr>
+                <td>int</td>
+                <td>32비트 정수를 저장하는 기본 타입</td>
+                <td>-2,147,483,648 ~ 2,147,483,647</td>
+            </tr>
+        </table>
+
+        <h2>🎯 학습 포인트</h2>
+
+        <h3>1. Java 프로그램의 기본 구조</h3>
+        <ul>
+            <li>클래스 선언의 중요성</li>
+            <li>main 메소드가 프로그램의 진입점 역할</li>
+            <li>콘솔 출력 방법 익히기</li>
+        </ul>
+
+        <h3>2. 변수 사용법</h3>
+        <ul>
+            <li>변수 선언과 초기화 방법</li>
+            <li>다양한 데이터 타입의 특성</li>
+            <li>변수값을 출력하는 방법</li>
+        </ul>
+
+        <h3>3. 기본 연산</h3>
+        <ul>
+            <li>산술 연산 (+) 사용법</li>
+            <li>문자열 연결 연산의 이해</li>
+        </ul>
+
+        <h2>🔧 개선 제안</h2>
+
+        <div class="improvement-box">
+            <strong>💡 원래 코드 추정</strong><br>
+            디컴파일된 코드이므로 원래는 다음과 같은 형태였을 것으로 추정됩니다:
+        </div>
+
+        <pre><code>public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("안녕하세요, Java의 세계에 오신 것을 환영합니다!");
+        System.out.println("Hello, World!");
+        
+        String name = "Java 학습자";
+        int age = 20;
+        
+        System.out.println("\n=== 자기소개 ===");
+        System.out.println("이름: " + name);
+        System.out.println("나이: " + age + "살");
+        
+        int num1 = 10;
+        int num2 = 5;
+        int result = num1 + num2;
+        
+        System.out.println("\n=== 간단한 계산 ===");
+        System.out.println(num1 + " + " + num2 + " = " + result);
+    }
+}</code></pre>
+
+        <h2>📝 결론</h2>
+        <p>이 HelloWorld.java 프로그램은 Java 프로그래밍의 기초를 학습하기에 적합한 간단하면서도 핵심적인 요소들을 포함하고 있습니다. 변수 선언, 출력, 기본 연산 등 Java 프로그래밍의 기본기를 익히는데 도움이 되는 훌륭한 예제입니다.</p>
+
+        <div class="info-box" style="text-align: center; margin-top: 30px;">
+            <strong>📅 문서 생성일: 2025년 9월 11일</strong><br>
+            <strong>🤖 작성자: Claude AI</strong>
+        </div>
+    </div>
+</body>
+</html>
